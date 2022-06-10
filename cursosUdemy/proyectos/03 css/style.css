@@ -1,0 +1,91 @@
+body {
+    background-color: #eee;
+}
+.caja {
+    
+    margin: 8px; /*bordea por fuera de la caja*/
+    padding: 8px; /*bordea por dentro de la caja*/
+    border-style: solid;/*dashed, dotted, double, groove, ridge, inset, outset, hidden, son otros tipos de estilos, también se puede utiliza 4 distintos uno seguido de otro con espacios pero sin comas.*/
+    border-width: 8px; /*espara darle tamaño al borde.*/
+    border-color: #faa; /*para el color del borde*/
+    border-left: 6px solid #afa; /* es para cambiar la propiedad de un borde determinado.*/
+    background-color: aquamarine;
+    border-radius: 4px; /*redondea los bordes*/
+    height: 100px; /*altura de la caja*/
+    width: 150px; /*ancho de la caja*/
+    color: #575; /*color del texto*/
+}
+.borde {
+    border-style: solid;
+    border-left: none;
+    border-right: none;
+    border-width: 2px;
+}
+.box {
+
+    border-style: solid;
+    border-width: 2px;
+}
+
+section {
+    margin: 15px;
+    width: 400px;
+}
+
+.cajaprueba {
+    margin: 15px;
+    width: 400px;
+    background-color: #fff;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ccc;
+    border-radius: 2px;
+    border-top: solid 0px;
+
+}
+.contenido {
+    padding: 10px;
+    border-bottom: solid 1px #eee;
+}
+.footer {
+    padding: 10px;
+    border-top: solid 1px #eee;
+}
+.botones {
+    padding: 10px;
+    border-top: solid 1px #eee;
+}
+.primario {
+    background-color: #575;
+    padding: 5px;
+    border: 0px;
+    color: white;
+
+}
+.secundario {
+    background-color: beige;
+    padding: 5px;
+    border: 0px;
+    color: black;
+
+}
+.parrafo {
+
+    
+    width: 500px;
+    color:#575;
+    text-align: center; /*justify sirve para que siempre tenga el mismo ancho(como en los diarios.)*/
+    text-indent:  40px;
+    line-height: 2.3; /*da espacio entre las lineas*/
+    word-spacing: 3px; /* es como "text-spacing", pero en vez de separar las letras separa por palabras.*/
+    text-shadow: 3px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+a {
+    text-decoration: none; /* "overline" coloca la linea arriba, "line-trough" tacha el texto*/
+    color: #faa;
+    float: right;
+    text-transform: uppercase;/*cambia el tipo de letra, en este caso todas Mayúsulas, "lowercase" deja todo el texto en minúsculas, "capitalize" pone la primera en Mayúsculas. */
+    letter-spacing: 3px;/*pone espacio entre las letras*/
+    
+}   

@@ -1,0 +1,69 @@
+body {
+    background-color: #eee;
+}
+h1 {
+    font-family: "Times New Roman";
+    font-style: normal; /*"italic" es para texto en cursiva*/
+    color:#575;
+    text-align: center; /*justify sirve para que siempre tenga el mismo ancho(como en los diarios.)*/
+    text-indent:  40px;
+    line-height: 2.3; /*da espacio entre las lineas*/
+    word-spacing: 3px; /* es como "text-spacing", pero en vez de separar las letras separa por palabras.*/
+    text-shadow: 3px 2px 2px rgba(0, 0, 0, 0.3);
+
+}
+
+p {
+    font-family: "Times New Roman";
+    font-style: italic; /*"italic" es para texto en cursiva*/
+    font-weight: bold; /*es el grosor de la letra tambien puede ser en números cambiando de a 100, desde el 300 al 900*/
+    font-size: 20px; /*tamaño del texto*/
+    color:#575;
+    text-align: left; /*justify sirve para que siempre tenga el mismo ancho(como en los diarios.)*/
+    text-indent:  40px;
+    line-height: 2.3; /*da espacio entre las lineas*/
+    word-spacing: 10px; /* es como "text-spacing", pero en vez de separar las letras separa por palabras.*/
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+a {
+    color: hotpink;
+    background-color: purple;
+    border: solid 2px violet;
+    padding: 10px;
+    border-radius: 4px;
+}
+a:link{ /*esto es para los link que no hemos visitado una vez visitados quedan con el color del punto anterior*/
+    color: yellow;
+    text-decoration: none;
+}
+
+a:visited{
+    color: red; /*esto es para los links visitados*/
+}
+a:active{
+    color: green; /*esto es para cuando hacemos clik en el link*/
+}
+a:hover{
+    color: orange; /*esto es para cuando el cursor pasa sobre el link*/
+    text-decoration: underline;
+    background-color: grey;
+}
+
+ul li {
+    list-style-type: circle; /*"square" son cuadrados, "upper-roman" son números romanos, "lower-alpha" son las letras del abecedario, */
+}
+ div p{
+    max-width: 100px;
+    background-color: aqua;
+    margin: auto;
+    position: relative;/*"realtive" sirve para moverlo utilizando top bottom, left o rigth""static" viene por defecto, "fixed" deja el contenido fijo en la pantalla*/
+    left: 15px;
+}  
+
+#over {
+    width: 100px;
+    height: 100px;
+    overflow: scroll;/*"visible" es la valor por defecto, "hidden" oculta el contenido dentro de los margenes*/
+}
+

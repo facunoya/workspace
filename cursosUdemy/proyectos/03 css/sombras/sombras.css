@@ -1,0 +1,75 @@
+body {
+    background-color: #eee;   
+}
+
+.box {
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.3) inset;/*el 3er px indica que tan borroso es se llama blur,
+    los px primeros indican sombra horizontal, y los 2dos px la sombra vertical.*/
+    /*inset indica que la sombra es por dentro*/
+}
+
+.text {
+    color: white;
+    text-shadow: 0px 1px 2px rgba(255,0,0,0.3);/*es = que box-shadow, pero para textos.*/
+}
+
+.dimensiones { /*IMPORTANTE la propiedad de transform se aplica a los elementos con
+    display block.*/
+    position: relative;
+    left: 50px;
+    top: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    box-shadow: 1px 2px 2px rgba(0,0,0,0.2);
+    transform: rotate(20deg);
+}
+
+.transform { /*IMPORTANTE la propiedad de transform se aplica a los elementos con
+    display block.*/
+    position: relative;
+    left: 50px;
+    top: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    box-shadow: 1px 2px 2px rgba(0,0,0,0.2);
+    transform: translate(50px, 100px);
+}
+
+.scale {
+    position: relative;
+    left: 50px;
+    top: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    box-shadow: 1px 2px 2px rgba(0,0,0,0.2);
+    transform: scale(2, 2); /*scaleX y scaleY son para moverse en los ejes x o y*/
+}
+
+.scale:hover {
+    transform: scale(3, 3);
+}
+
+.skew {
+    position: relative;
+    left: 50px;
+    top: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    box-shadow: 1px 2px 2px rgba(0,0,0,0.2);
+    transform: skewX(25deg);
+}
+
+.skewY {
+    position: relative;
+    left: 50px;
+    top: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    box-shadow: 1px 2px 2px rgba(0,0,0,0.2);
+    transform: skewY(25deg); /*con skwe (3, 2) movemos los 2 ejes.*/
+}

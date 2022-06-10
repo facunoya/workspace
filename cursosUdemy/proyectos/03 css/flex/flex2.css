@@ -1,0 +1,47 @@
+body {
+    color: black;
+    width: 300px;
+    
+}
+
+.flex { 
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly; /*space-between, space-around,
+     space-evenly, center, start, end*/
+    align-items: stretch; /*end, start, space-between, center*/
+    height: 375px;
+    align-content: space-around;/*para que sea apreciable hay que darle un height mayor*/
+    border: 1px solid grey;
+}
+
+.red {
+    background-color: red;
+    border: 2px solid pink;
+}
+
+.blue {
+    background-color: blue;
+    width: 200px;
+    border: 2px solid pink ;
+    color: peachpuff;
+}
+
+.green {
+    background-color: green;
+    border: 2px solid pink;
+    height: 150px;
+    opacity: 0.7; /*la opacidad acá se aplica a todo el div (fondo, letra, borde),
+    esté antes o después, como en este caso, el <color: blue;>.*/
+    color: blue;
+}
+
+.orange {
+    background-color: orange;
+    border: 2px solid pink;
+}
+
+.short {
+    border: 1.5px solid blue;
+    
+}

@@ -1,0 +1,30 @@
+body {
+    background-color: #eee;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 2rem 20% 1fr 2fr;
+    grid-template-rows: minmax(100px, auto) ;
+/*"minmax", tanto en "grid-template-columns" como en "rid-template-rows" el primer argumento es el tamaño minimo de nuestro elementos el segundo el tamaño máximo*/
+/*"repeat" en vez de minmax hace que se repita el tamaño en filas o columnas y van a ser tantas como argumentos hayamos puesto.*/
+    grid-row-gap: 20px; /*con esto le damos separacion a las filas*/
+    grid-column-gap: 10px; /*con esto le damos separacion a las columnas.*/
+    /*si tulizamos "grid-gap" el primer valor corresponde a filas el segundo al espacio de las columnas, podemos hacerlo en un solo paso,
+    si ponemos un solo valor toma el mismo espacio para filas y columnas.*/
+}
+
+.element {
+    background-color: red;
+}
+
+.header {
+    grid-column-start: 1;/*esto se aplica a un solo elemnto por eso se hace separado.*/
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    /*si lo queremos hacer mas simple se hace del siguiente modo ver 
+    los 2 codigos comentados abajo mismo.*/
+    /*grid-column: 1 / 6;*/
+    /*grid-row: 1 / 3;*/
+}

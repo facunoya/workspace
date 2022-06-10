@@ -1,0 +1,16 @@
+body {
+    background-color: #eee;
+}
+
+.fondo {
+    background-color: hsl(120, 60%, 70%); /*también se le puede agregar opacidad con , 0.3 o en otra linea*/
+    opacity: 0.5; /*en este caso afecta a todo el elemento, no solamente al color de fondo.*/
+}
+.gradientes { /*es una manera de mezclar 2 o mas colores colores*/
+    background-image: linear-gradient(to bottom right, red, yellow);/*pueden ir los colores solos, o antes de los colores indicar la direccion,
+    que puede ser hacia arriba, abajo, derecha, izquierda, 2juntas tambien(para los lados se usa el "to"), o en grados con (-33deg) el número idinca los grados*/
+}
+
+.repetir {
+    background-image: repeating-linear-gradient(green 20%, yellow 50%);
+}

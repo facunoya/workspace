@@ -1,0 +1,17 @@
+body {
+    background-color: #eee;
+}
+
+.fondo {
+    height: 400px;
+    /*background: green url("https://placekitten.com/200/300") no-repeat right bottom scroll  ;*/ /*Esto es lo mismo que lo de abajo
+    tambien se puede hacer en una sola linea, pero siempre en este orden, background-cize no la toma, hay que hacerla aparte.*/
+    background-color: green;
+    background-image: url("https://placekitten.com/200/300");
+    background-repeat: no-repeat; /*"no-repeat", es para que no se repita la imagen,
+    "repeat-x", es para que se repita la imagen, en el eje x, "repeat-y", es para que se
+    repita la imagen en el eje y*/
+    background-position: right bottom;/*por defecto trae "top left". "right bottom" es abajo a la derecha,(bottom es abajo) ""*/
+    background-attachment: scroll; /*"fixed"esta propiedad, es para que el fondo vaya bajando con nosotros y lo que se mueve es el contenido,*/
+    /*background-size: cover;*/ /*para q la imgagen tome todo el tamañao pero se deforma.*/
+}
